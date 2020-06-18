@@ -1,9 +1,10 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
 import React from 'react'
+import { Link } from 'gatsby'
+
+import { Container } from './styles'
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <Container>
     <div>
       <h1 style={{ margin: 0 }}>
         <Link
@@ -13,11 +14,11 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          <strong>Lara</strong> Beatriz
         </Link>
       </h1>
     </div>
-  </header>
+  </Container>
 )
 
 export default Header

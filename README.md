@@ -5,11 +5,11 @@
   </a>
 </p>
 <h1 align="center">
-  Larabeatriz.dev
+  :construction: Em desenvolvimento...
 </h1>
 
 <h3 align="center">
-  Blog and Portfolio with Gatsby's
+  Larabeatriz.dev - Blog and Portfolio with Gatsby's
 </h3>
 
 <p align="center">
@@ -20,17 +20,17 @@
   <a href="https://www.linkedin.com/in/larabeatrizms/">
     <img alt="Made by" src="https://img.shields.io/badge/made%20by-Lara%20Beatriz-gree">
   </a>
-  
+
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/larabeatrizms/larabeatriz.dev">
-  
+
   <a href="https://github.com/larabeatrizms/larabeatriz.dev/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/larabeatrizms/larabeatriz.dev">
   </a>
-  
+
   <a href="https://github.com/larabeatrizms/larabeatriz.dev/issues">
     <img alt="Repository issues" src="https://img.shields.io/github/issues/larabeatrizms/larabeatriz.dev">
   </a>
-  
+
   <img alt="GitHub" src="https://img.shields.io/github/license/larabeatrizms/larabeatriz.dev">
 </p>
 
