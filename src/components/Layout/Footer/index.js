@@ -1,9 +1,9 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 
-import { Container } from './styles'
+import { Container } from './styles';
 
-const Header = () => (
+const Footer = () => (
   <Container>
     <div>
       <h1 style={{ margin: 0 }}>
@@ -19,6 +19,6 @@ const Header = () => (
       </h1>
     </div>
   </Container>
-)
+);
 
-export default Header
+export default Footer;

@@ -1,78 +1,56 @@
-import { createGlobalStyle } from 'styled-components'
-import Roboto from '../assets/fonts/Roboto-Regular.ttf'
+import { createGlobalStyle } from 'styled-components';
+import Roboto from '../assets/fonts/Roboto-Regular.ttf';
 
 export default createGlobalStyle`
   @font-face {
-      font-family: "Roboto";
-      src: url(${Roboto});
+    font-family: "Roboto";
+    src: url(${Roboto});
   }
 
-  body,
-    html {
-      width: 100%;
-      height: 100%;
-      min-height: 100%;
-      margin: 0;
-      padding: 0;
-      left: 0;
-      top: 0;
-      font-size: 100%;
-      padding-bottom: 60px;
-    }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+  }
 
-    body {
-      display: flex;
-      flex-direction: column;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji','Segoe UI Emoji', 'Segoe UI Symbol';
-      transition: color .5s ease-in-out;
-    }
+  html {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    font-size: 62.5%;
+  }
 
-    ::-webkit-scrollbar {
-      width: 8px;
-      background-color: rgba(0, 0, 0, 0.09);
-      border-radius: 100px;
-    }
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    /* background-color: #17171a; */
+    background-color: #f7f2ff;
+  }
 
-    ::-webkit-scrollbar:hover {
-      background-color: rgba(0, 0, 0, 0.18);
-    }
+  body, input, button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    padding: 0;
+    border: 0;
+  }
 
-    ::-webkit-scrollbar-thumb:vertical {
-      background: rgba(0, 0, 0, 0.5);
-      border-radius: 100px;
-    }
+  button {
+    cursor: pointer;
+  }
 
-    ::-webkit-scrollbar-thumb:vertical:active {
-      background: rgba(0, 0, 0, 0.61);
-      border-radius: 100px;
-    }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4rem;
+  }
 
-    pre::-webkit-scrollbar {
-      height: 8px;
-      background-color: rgba(0, 0, 0, 0);
-      border-radius: 100px;
-    }
-
-    pre::-webkit-scrollbar:hover {
-      background-color: rgba(0, 0, 0, 0.09);
-    }
-
-    pre::-webkit-scrollbar-thumb {
-      background: rgba(0, 0, 0, 0.5);
-      border-radius: 100px;
-    }
-
-    pre::-webkit-scrollbar-thumb:active {
-      background: rgba(0, 0, 0, 0.5);
-      border-radius: 100px;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Roboto', sans-serif;
-    }
-
-    a {
-      color: #00a8ff;
-      border-bottom: 1px solid transparent;
-    }
-`
+  a {
+    color: #00a8ff;
+    border-bottom: 1px solid transparent;
+  }
+`;
