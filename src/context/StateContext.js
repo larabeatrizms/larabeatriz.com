@@ -1,36 +1,58 @@
-import React, { useState, useEffect, createContext } from 'react'
+import React, {
+  useState,
+  useEffect,
+  useContext,
+  createContext,
+  Dispatch,
+  SetStateAction,
+  useCallback,
+} from 'react';
+import light from '../styles/themes/light';
+import dark from '../styles/themes/dark';
 
-export const StateContext = createContext({
-  dark: false,
-  toggleDark: () => {},
-})
+const ThemeContext = createContext({
+  toggleTheme: () => {},
+  theme: dark,
+});
 
-export const StateProvider = ({ children }) => {
-  const [dark, setDark] = useState(false)
+const ThemeProvider = ({ children }) => {
+  const [theme, setTheme] = useState(() => {
+    const storageValue = localStorage.getItem('theme');
+
+    if (storageValue) {
+      return JSON.parse(storageValue);
+    }
+    return light;
+  });
+
+  const toggleTheme = useCallback(() => {
+    console.log('trocando tema');
+
+    setTheme(theme.title === 'light' ? dark : light);
+  }, [theme.title]);
 
   useEffect(() => {
-    const darkTheme = localStorage.getItem('@joaopedro.cc/dark-theme')
+    localStorage.setItem('theme', JSON.stringify(theme));
+  }, [theme]);
 
-    if (darkTheme) {
-      const lsDark = JSON.parse(darkTheme)
-      setDark(lsDark)
-      localStorage.setItem('@joaopedro.cc/dark-theme', JSON.stringify(lsDark))
-    }
-  }, [])
-
-  const toggleDark = () => {
-    localStorage.setItem('@joaopedro.cc/dark-theme', JSON.stringify(!dark))
-    setDark(!dark)
-  }
+  const value = React.useMemo(() => ({ toggleTheme, theme }), [
+    toggleTheme,
+    theme,
+  ]);
 
   return (
-    <StateContext.Provider
-      value={{
-        dark,
-        toggleDark,
-      }}
-    >
-      {children}
-    </StateContext.Provider>
-  )
+    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
+  );
+};
+
+function useTheme() {
+  const context = useContext(ThemeContext);
+
+  if (!context) {
+    throw new Error('useTheme must be used whithin a ThemeProvider');
+  }
+
+  return context;
 }
+
+export { ThemeProvider, useTheme };

@@ -23,14 +23,14 @@ export default createGlobalStyle`
     left: 0;
     top: 0;
     font-size: 62.5%;
+    background-color: #17171a;
   }
 
   body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    /* background-color: #17171a; */
-    background-color: #f7f2ff;
+    background-color: #17171a;
   }
 
   body, input, button {
@@ -50,7 +50,9 @@ export default createGlobalStyle`
   }
 
   a {
-    color: #00a8ff;
+    color: #F7F2FC;
+    cursor: pointer;
     border-bottom: 1px solid transparent;
+    text-decoration: none;
   }
 `;

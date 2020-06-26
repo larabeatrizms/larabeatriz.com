@@ -1,13 +1,11 @@
-import React from 'react'
-import { ThemeProvider } from 'styled-components'
-import { StateProvider } from '../src/context/StateContext'
-import defaultTheme from '../src/styles/themes/default.js'
+import React from 'react';
+import { AppProvider } from '../src/context/AppProvider';
+import { ThemeProvider } from '../src/context/StateContext';
 
 export const wrapRootElement = ({ element }) => {
-  console.log('entrou')
   return (
-    <StateProvider>
-      <ThemeProvider theme={defaultTheme}>{element}</ThemeProvider>
-    </StateProvider>
-  )
-}
+    <ThemeProvider>
+      <AppProvider>{element}</AppProvider>
+    </ThemeProvider>
+  );
+};

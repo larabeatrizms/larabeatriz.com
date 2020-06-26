@@ -1,8 +1,16 @@
-const path = require("path")
+const path = require('path');
+
+// exports.onCreateWebpackConfig = ({ actions }) => {
+//   actions.setWebpackConfig({
+//     resolve: {
+//       modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+//     },
+//   });
+// };
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
-  const post = path.resolve("src/templates/post.js")
+  const { createPage } = actions;
+  const post = path.resolve('src/templates/post.js');
 
   return graphql(`
     {
@@ -20,10 +28,10 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    const posts = result.data.allMarkdownRemark.edges
+    const posts = result.data.allMarkdownRemark.edges;
 
     posts.forEach(({ node }) => {
-      const { frontmatter } = node
+      const { frontmatter } = node;
 
       createPage({
         path: frontmatter.path,
@@ -31,7 +39,7 @@ exports.createPages = ({ graphql, actions }) => {
         context: {
           path: frontmatter.path,
         },
-      })
-    })
-  })
-}
+      });
+    });
+  });
+};
