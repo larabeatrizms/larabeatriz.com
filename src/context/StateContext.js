@@ -17,11 +17,11 @@ const ThemeContext = createContext({
 
 const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
-    const storageValue = localStorage.getItem('theme');
+    // const storageValue = localStorage.getItem('theme');
 
-    if (storageValue) {
-      return JSON.parse(storageValue);
-    }
+    // if (storageValue) {
+    //   return JSON.parse(storageValue);
+    // }
     return light;
   });
 
@@ -32,7 +32,7 @@ const ThemeProvider = ({ children }) => {
   }, [theme.title]);
 
   useEffect(() => {
-    localStorage.setItem('theme', JSON.stringify(theme));
+    // localStorage.setItem('theme', JSON.stringify(theme));
   }, [theme]);
 
   const value = React.useMemo(() => ({ toggleTheme, theme }), [
