@@ -23,14 +23,14 @@ export default createGlobalStyle`
     left: 0;
     top: 0;
     font-size: 62.5%;
-    background-color: #17171a;
+    background-color: ${({ theme }) => theme.colors.background};
   }
 
   body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    background-color: #17171a;
+    background-color: ${({ theme }) => theme.colors.background};
   }
 
   body, input, button {
@@ -47,10 +47,11 @@ export default createGlobalStyle`
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
     font-size: 2.4rem;
+    color: ${({ theme }) => theme.colors.title};
   }
 
   a {
-    color: #F7F2FC;
+    color: ${({ theme }) => theme.colors.subtitle};
     cursor: pointer;
     border-bottom: 1px solid transparent;
     text-decoration: none;

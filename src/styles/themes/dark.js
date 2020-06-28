@@ -4,25 +4,27 @@ export default {
   title: 'dark',
 
   colors: {
-    primary: '#5636D3',
-    secondary: '#FF872C',
+    primary: '#7B31D4',
+    secondary: '#12A454',
 
+    orange: '#FF872C',
     warning: '#E83F5B',
     success: '#12A454',
 
-    background: colors.graySuperDarker,
+    background: colors.grayBlack,
 
-    buttonText: colors.white,
+    buttonText: colors.grayLighter,
 
-    cardTittle: colors.purpleLighter,
-    cardDescription: colors.grayRegular,
-    cardTags: colors.purpleLighter,
+    cardPostTittle: colors.purpleLighter,
+    cardPostSubTitle: colors.grayRegular,
 
-    backgroundCard: colors.grayDarker,
+    cardHomeTittle: colors.purpleLighter,
+    cardHomeDescription: colors.grayRegular,
+    cardHomeBorder: colors.grayMegaDarker,
 
-    text: colors.grayDark,
-
-    degradeTo: colors.grayDark,
-    degradeFrom: colors.grayDarker,
+    text: colors.grayLighter,
+    subtitle: colors.grayRegular,
+    title: colors.purpleLighter,
+    textDisabled: colors.grayDarker,
   },
 };

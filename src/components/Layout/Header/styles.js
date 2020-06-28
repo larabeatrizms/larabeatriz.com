@@ -5,7 +5,7 @@ export const Container = styled.header`
   top: 0;
   width: 100%;
   z-index: 20;
-  background-color: #17171a;
+  background-color: ${({ theme }) => theme.colors.background};
 
   padding: 20px 5.7rem;
 
@@ -13,12 +13,23 @@ export const Container = styled.header`
   justify-content: space-between;
 
   h1 {
-    color: #f7f2fc;
+    color: ${({ theme }) => theme.colors.title};
 
-    strong {
-      /* color: #bdbdbd; */
+    a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
 
-      color: ${({ theme }) => theme.colors.cardTittle};
+      color: ${({ theme }) => theme.colors.title};
+
+      img {
+        margin-right: 1.1rem;
+      }
+
+      strong {
+        margin-left: 0.5rem;
+        color: ${({ theme }) => theme.colors.subtitle};
+      }
     }
   }
 
@@ -31,9 +42,7 @@ export const Container = styled.header`
     align-items: center;
 
     a {
-      /* color: #e0e0e0; */
-
-      color: ${({ theme }) => theme.colors.cardTittle};
+      color: ${({ theme }) => theme.colors.text};
     }
   }
 `;

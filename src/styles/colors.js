@@ -11,9 +11,10 @@ export default {
   purpleLight: '#EFE6FA',
   purpleLighter: '#F7F2FC',
 
-  grayLighter: '#F0F0F0',
+  graySuperLighter: '#F0F0F0',
+  grayLighter: '#F2F2F2',
   grayLight: '#EBEBEB',
-  grayRegular: '#E0E0E0',
+  grayRegular: '#BDBDBD',
   grayDark: '#878787',
   grayDarker: '#4F4F4F',
   graySuperDarker: '#323239',
