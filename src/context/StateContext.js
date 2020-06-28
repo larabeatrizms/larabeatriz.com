@@ -22,7 +22,7 @@ const ThemeProvider = ({ children }) => {
     // if (storageValue) {
     //   return JSON.parse(storageValue);
     // }
-    return light;
+    return dark;
   });
 
   const toggleTheme = useCallback(() => {
