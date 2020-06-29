@@ -26,8 +26,6 @@ const ThemeProvider = ({ children }) => {
   });
 
   const toggleTheme = useCallback(() => {
-    console.log('trocando tema');
-
     setTheme(theme.title === 'light' ? dark : light);
   }, [theme.title]);
 

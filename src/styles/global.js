@@ -1,11 +1,18 @@
 import { createGlobalStyle } from 'styled-components';
-import Roboto from '../assets/fonts/Roboto-Regular.ttf';
+import RobotoRegular from '../assets/fonts/Roboto-Regular.ttf';
+import RobotoMedium from '../assets/fonts/Roboto-Medium.ttf';
 
 export default createGlobalStyle`
   @font-face {
     font-family: "Roboto";
-    src: url(${Roboto});
+    src: url(${RobotoRegular});
   }
+  @font-face {
+    font-family: "Roboto";
+    font-weight: 500;
+    src: url(${RobotoMedium});
+  }
+
 
   * {
     margin: 0;
@@ -48,6 +55,7 @@ export default createGlobalStyle`
     font-family: 'Roboto', sans-serif;
     font-size: 2.4rem;
     color: ${({ theme }) => theme.colors.title};
+    font-weight: 500;
   }
 
   a {
