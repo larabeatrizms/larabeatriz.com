@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 import Button from '../components/Button';
 import SEO from '../components/seo';
 
-import { Container } from './index-styles';
+import { Container } from '../components/Main/styles';
 
 const IndexPage = ({ data }) => {
   return (
