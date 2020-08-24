@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import { Container } from './styles';
 
-const Button = ({ children }) => {
+const Main = ({ children }) => {
   return <Container>{children}</Container>;
 };
 
-export default Button;
+export default Main;

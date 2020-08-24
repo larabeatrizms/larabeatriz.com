@@ -5,13 +5,13 @@ import Layout from '../components/Layout';
 import Button from '../components/Button';
 import SEO from '../components/seo';
 
-import { Container } from '../components/Main/styles';
+import Main from '../components/Main';
 
 const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <Container>
+      <Main>
         <div className="hero">
           <div className="hero-texts">
             <p>
@@ -23,8 +23,7 @@ const IndexPage = ({ data }) => {
 
           <img src={ImgProfile1} alt="Lara Beatriz" />
         </div>
-      </Container>
-      {/* <Link to="/using-typescript/">Go to "Using TypeScript"</Link> */}
+      </Main>
     </Layout>
   );
 };
