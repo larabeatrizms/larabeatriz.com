@@ -51,6 +51,12 @@ export const Container = styled.div`
       button + button {
         margin-top: 22px;
       }
+
+      @media (max-width: 950px) {
+        h1 {
+          font-size: 4rem;
+        }
+      }
     }
   }
 
@@ -94,6 +100,15 @@ export const Container = styled.div`
 
         .about-me-text {
           margin: 0 53px 0;
+        }
+
+        img {
+        }
+      }
+
+      @media (max-width: 560px) {
+        img {
+          max-width: 400px;
         }
       }
     }

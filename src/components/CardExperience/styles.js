@@ -29,4 +29,8 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.colors.cardHomeDescription};
     font-size: 1.4rem;
   }
+
+  @media (max-width: 560px) {
+    margin-right: 53px;
+  }
 `;
