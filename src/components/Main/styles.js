@@ -54,7 +54,7 @@ export const Container = styled.div`
 
       @media (max-width: 950px) {
         h1 {
-          font-size: 4rem;
+          font-size: 4.6rem;
         }
       }
     }
@@ -72,7 +72,6 @@ export const Container = styled.div`
 
     .about-me-content {
       display: flex;
-      /* flex-flow: row wrap; */
       flex-direction: row;
       justify-content: center;
       align-items: center;
@@ -100,9 +99,6 @@ export const Container = styled.div`
 
         .about-me-text {
           margin: 0 53px 0;
-        }
-
-        img {
         }
       }
 
