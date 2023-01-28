@@ -9,10 +9,10 @@ const Button = ({ children, ...rest }) => {
   return (
     <Container
       type="button"
-      onClick={() => console.log('asjdfhkasd')}
+      // onClick={() => console.log('')}
       {...rest}
     >
-      <Link to="/page-2">--</Link>
+      <Link to="/page-2"></Link>
       {children}
       <FiArrowUpRight />
     </Container>

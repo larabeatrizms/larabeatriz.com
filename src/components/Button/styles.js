@@ -17,6 +17,10 @@ export const Container = styled.button`
   font-size: 1.6rem;
   font-weight: 500;
 
+  a {
+    color: ${({ theme }) => theme.colors.buttonText};
+  }
+
   ${props =>
     props.variant === 'outlined' &&
     css`

@@ -35,7 +35,7 @@ export const Container = styled.header`
 
   nav {
     width: 100%;
-    max-width: 363px;
+    max-width: 300px;
 
     display: flex;
     justify-content: space-between;

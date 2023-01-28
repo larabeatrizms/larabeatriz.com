@@ -16,7 +16,7 @@ export const Container = styled.div`
     min-height: 95vh;
 
     background-image: url(${ImgProfile1});
-    background-position: 100% 45%;
+    background-position: 100% 70%;
     background-repeat: no-repeat;
     background-size: 60%;
 
@@ -81,10 +81,10 @@ export const Container = styled.div`
         flex-direction: column;
 
         max-width: 722px;
-        margin-left: 150px;
+        margin-left: 100px;
+        margin-right: 80px;
 
         p {
-          font-weight: 500;
           font-size: 2.4rem;
           color: ${({ theme }) => theme.colors.title};
         }
